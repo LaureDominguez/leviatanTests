@@ -5,7 +5,19 @@
 
 
 export function Exo4() {
-	console.log('pouet');
+	const userInput = document.getElementById('exo4');
+
+	userInput.addEventListener('input', function () {
+		const texte = userInput.value.toLowerCase();
+		// console.log(texte);
+		const inverse = texte.split('').reverse().join('');
+
+		if (texte.length > 1 && texte === inverse) {
+			afficherReponse('Palindrome !');
+		} else {
+			afficherReponse('Nop');
+		}
+	});
 
 	/**********************************************/
 
