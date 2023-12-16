@@ -9,5 +9,5 @@ Exo1();
 Exo2();
 Exo3();
 Exo4();
-// Bonus1();
+Bonus1();
 Bonus2();

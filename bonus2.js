@@ -3,8 +3,6 @@
 // Écrire une fonction qui prend en entrée une liste d'entiers et un nombre entier K. La fonction doit retourner True si deux nombres distincts de la liste peuvent être additionnés pour obtenir K, et False sinon.
 
 export function Bonus2() {
-	console.log('giga pouet');
-
 	const nombres = [1, 2, 3, 4, 5];
     const K = 9;
     const paire = false;
