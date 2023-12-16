@@ -26,6 +26,6 @@
 // Ajouter une interface graphique.
 
 
-export function bonus1() {
+export function Bonus1() {
     console.log('maxi pouet');
 };
