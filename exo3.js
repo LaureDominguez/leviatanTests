@@ -4,18 +4,21 @@
 
 
 export function Exo3() {
-    console.log('pouet');
-    var userInput = document.getElementById("exo3")
+	const userInput = document.getElementById('exo3');
 
-    userInput.addEventListener('input', function () {
-        var texte = userInput.value;
-        
-			console.log(texte);
-			afficherReponse(texte);
-		});
+	userInput.addEventListener('input', function () {
+        const texte = userInput.value;
+        // console.log(texte);
 
-    function afficherReponse(reponse) {
-        var div = document.getElementById('reponse3');
-        div.textContent = reponse;
-    }
+		const inverse = texte.split('').reverse().join('');
+		// console.log(inverse);
+		afficherReponse(inverse);
+	});
+
+	/**********************************************/
+
+	function afficherReponse(reponse) {
+		const div = document.getElementById('reponse3');
+		div.textContent = reponse;
+	}
 }

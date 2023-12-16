@@ -19,9 +19,11 @@ export function Exo2() {
     // console.log('Résulat final = ' + totalPair);
     afficherReponse('Résulat final = ' + totalPair);
 
+    /**********************************************/
+
     function afficherReponse(reponse) {
-        var div = document.getElementById('reponse2');
-        var parag = document.createElement('p');
+        const div = document.getElementById('reponse2');
+        const parag = document.createElement('p');
         parag.textContent = reponse;
         div.appendChild(parag);
     }
