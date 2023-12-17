@@ -7,18 +7,22 @@ export function Bonus2() {
     const K = 9;
     const paire = false;
 
+	// 1ere boucle for pour parcourir le tableau
 	for (let i = 0; i < nombres.length; i++) {
+		// on garde la valeur du nombre 'i' dans 'a'
 		const a = nombres[i];
-		// console.log('a = ' + a);
+
+		// 2eme boucle for pour parcourir le tableau à partir de 'j', soit 'i'+1 (pour ne pas comparer 'a' avec lui même)
 		for (let j = i + 1; j < nombres.length; j++) {
+			// on garde la valeur du nombre 'j' dans 'b'
 			const b = nombres[j];
-			// console.log('b = ' + b);
+
 			if ((a + b) === K) {
-				// console.log('True = ' + (a+b));
+				// si la somme de 'a'+'b' est bien égale à K, on sort de la boucle et affiche le résultat
                 afficherReponse('True = ' + (a + b));
                 break;
 			} else {
-				// console.log('False');
+				// sion on renvoi 'False'
                 afficherReponse('False');
                 break;
 			}

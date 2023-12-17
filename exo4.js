@@ -9,9 +9,12 @@ export function Exo4() {
 
 	userInput.addEventListener('input', function () {
 		const texte = userInput.value.toLowerCase();
-		// console.log(texte);
+		// transforme tous les caractères en minuscules
+
 		const inverse = texte.split('').reverse().join('');
 
+		// si le texte inversé === le texte de base, alors on a un palindrome
+		// (j'ai ajouté le texte.length > 1 pour qu'il ne retourne pas "Palindrome!" quand le champ est vide)
 		if (texte.length > 1 && texte === inverse) {
 			afficherReponse('Palindrome !');
 		} else {
