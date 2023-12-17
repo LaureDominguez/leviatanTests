@@ -4,8 +4,8 @@
 
 export function Bonus2() {
 	const nombres = [1, 2, 3, 4, 5];
-    const K = 9;
-    const paire = false;
+	const K = 9;
+	const paire = false;
 
 	// 1ere boucle for pour parcourir le tableau
 	for (let i = 0; i < nombres.length; i++) {
@@ -17,19 +17,23 @@ export function Bonus2() {
 			// on garde la valeur du nombre 'j' dans 'b'
 			const b = nombres[j];
 
-			if ((a + b) === K) {
+			if (a + b === K) {
 				// si la somme de 'a'+'b' est bien égale à K, on sort de la boucle et affiche le résultat
-                afficherReponse('True = ' + (a + b));
-                break;
+				afficherReponse('True');
+				break;
 			} else {
 				// sion on renvoi 'False'
-                afficherReponse('False');
-                break;
+				afficherReponse('False');
+				break;
 			}
 		}
-    }
-    
+	}
+
 	/**********************************************/
+
+	// Affiche le nombre K et la liste des nombres à additionner
+	const enonce = document.getElementById('enonceB2');
+	enonce.innerHTML = 'Nombre à trouver : ' + K + '<br> Liste de nombres : ' + nombres;
 
 	function afficherReponse(reponse) {
 		const div = document.getElementById('reponseB2');
