@@ -6,12 +6,15 @@
 export function Exo3() {
 	const userInput = document.getElementById('exo3');
 
+	// Récupère la valeur de l'input à chaque fois qu'elle est modifié par l'utilisateur
 	userInput.addEventListener('input', function () {
-        const texte = userInput.value;
-        // console.log(texte);
+		const texte = userInput.value;
 
 		const inverse = texte.split('').reverse().join('');
-		// console.log(inverse);
+		// La méthode split() divise la string en array,
+		// reverse() inverse l'index du array,
+		// join() combine le array en string
+		
 		afficherReponse(inverse);
 	});
 

@@ -3,24 +3,95 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Exercices</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<h2>Exercice 1 :</h2>
-	<p class="reponse" id="reponse1"></p>
+	<h1>Test Technique Leviatan</h1>
 
-	<h2>Exercice 2 :</h2>
-	<p class="reponse" id="reponse2"></p>
-	
-	<h2>Exercice 3 :</h2>
-	<input type="text" name="userInput" id="exo3" placeholder="Tapez votre texte ici">
-	<p class="reponse" id="reponse3"></p>
+	<!-- Exo1 -->
+	<div class="exo">
+		<h2>Exercice 1 :</h2>
+		<p class="enonce">Dans le langage de votre choix, écrire un programme, pour les nombres entre 1 et 101 inclus :</p>
+		<ul class="enonce">
+			<li> si le nombre est divisible par 3** : on écrit Levia</li>
+			<li>si le nombre est divisible par 5** : on écrit Tan</li>
+			<li>si le nombre est divisible par 3 et par 5** : on écrit LeviaTan</li>
+			<li>sinon** : on écrit le nombre</li>
+		</ul>
+		<p class="reponse" id="reponse1"></p>
+	</div>
 
-	<h2>Exercice 4 :</h2>
-	<input type="text" name="userInput" id="exo4" placeholder="Tapez votre texte ici">
-	<p class="reponse" id="reponse4"></p>
 
-	<h2>Exercice Bonus 2 :</h2>
-	<p class="reponse" id="reponseB2"></p>
+	<!-- Exo2 -->
+	<div class="exo">
+		<h2>Exercice 2 :</h2>
+		<p class="enonce">Dans le langage de votre choix, écrire un programme qui prend en entrée une liste de nombres entiers positifs et qui renvoie la somme des nombres pairs de cette liste.</p>
+		<p class="enonce" id="enonce2"></p>
+		<p class="reponse" id="reponse2"></p>
+	</div>
+
+
+	<!-- Exo3 -->
+	<div class="exo">
+		<h2>Exercice 3 :</h2>
+		<p class="enonce">Dans le langage de votre choix, écrire un programme qui prend en entrée une chaîne de caractères et retourne cette chaîne inversée.</p>
+		<input type="text" name="userInput" id="exo3" placeholder="Tapez votre texte ici">
+		<p class="reponse" id="reponse3"></p>
+	</div>
+
+
+	<!-- Exo4 -->
+	<div class="exo">
+		<h2>Exercice 4 :</h2>
+		<p class="enonce"> Dans le langage de votre choix, écrire un programme qui prend en entrée une liste de nombres entiers positifs et qui renvoie la somme des nombres pairs de cette liste.</p>
+		<input type="text" name="userInput" id="exo4" placeholder="Tapez votre texte ici">
+		<p class="reponse" id="reponse4"></p>
+	</div>
+
+
+	<!-- Exo B1 -->
+	<div class="exo">
+		<h2>Exercice Bonus 1 :</h2>
+		<p class="enonce">Créer une API REST simple pour gérer une collection d'articles. Les articles doivent avoir un id, un titre, un contenu et une date de création.</p>
+
+		<h3 class="enonce">Contraintes :</h3>
+		<ul class="enonce">
+			<li>Utilisez un langage et un framework de votre choix (le framework est obligatoire).</li>
+			<li>Fonctions à développer:
+				<ul>
+					<li>GET /articles: Récupérer tous les articles.</li>
+					<li>GET /articles/&lt;id>: Récupérer un article par son ID.</li>
+					<li>POST /articles: Ajouter un nouvel article.</li>
+					<li>PUT /articles/&lt;id>: Mettre à jour un article par son ID.</li>
+					<li>DELETE /articles/&lt;id>: Supprimer un article par son ID.</li>
+				</ul>
+			</li>
+			<li>La mise en place d'une base de données est obligatoire.</li>
+			<li>Toutes les librairies sont autorisées.</li>
+		</ul>
+
+		<h3 class="enonce">Bonus 1 :</h3>
+		<p class="enonce">Ajouter une authentification avec un système JWT.</p>
+
+		<h3 class="enonce">Contraintes :</h3>
+		<ul class="enonce">
+			<li>Seuls les utilisateurs authentifiés peuvent créer, mettre à jour ou supprimer des articles.</li>
+			<li>Tout le monde peut lire les articles</li>
+		</ul>
+
+		<h3 class="enonce">Bonus 2 :</h3>
+		<p class="enonce">Ajouter une interface graphique.</p>
+		<p class="reponse" id="reponseB1">En cours</p>
+	</div>
+
+
+	<!-- Exo B2 -->
+	<div class="exo">
+		<h2>Exercice Bonus 2 :</h2>
+		<p class="enonce"> Dans le langage de votre choix, écrire un programme qui prend en entrée une liste de nombres entiers positifs et qui renvoie la somme des nombres pairs de cette liste.</p>
+		<p class="enonce" id="enonceB2"></p>
+		<p class="reponse" id="reponseB2"></p>
+	</div>
 
 	<script type="module" src="./scripts.js"></script>
 </body>
