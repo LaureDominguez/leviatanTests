@@ -30,6 +30,14 @@ ul{
     font-style: italic;
 }
 
+.note{
+    text-decoration: underline;
+}
+
+.error{
+    color: red;
+}
+
 .reponse{
     border: 2px solid #0062ff48;
     border-radius: 5px;

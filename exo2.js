@@ -2,6 +2,10 @@
 // #### Description :
 // Dans le langage de votre choix, écrire un programme qui prend en entrée une liste de nombres entiers positifs et qui renvoie la somme des nombres pairs de cette liste.
 
+// #### Contraintes :
+// - Les librairies sont interdites.
+// - Ne pas utiliser de bibliothèques externes ou de fonctions pré-définies pour calculer la somme des nombres pairs.
+
 
 export function Exo2() {
 	let nombres = [1, 52, 3, 48, 12, 2, 7, 6, 25, 93, 45];

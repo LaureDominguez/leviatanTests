@@ -12,8 +12,7 @@ Dans le langage de votre choix, écrire un programme, pour les nombres entre 1 e
 - **si le nombre est divisible par 3 et par 5** : on écrit LeviaTan
 - **sinon** : on écrit le nombre
 
-#### Contraintes :
-- Les librairies sont interdites.
+
 
 ### Exemple :
 **Entrée**
