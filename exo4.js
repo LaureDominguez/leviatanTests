@@ -17,8 +17,8 @@ export function Exo4() {
 
 		const texte = userInput.value
 			.toLowerCase() // transforme tous les caractères en minuscules
-			.replace(/[.,\/#!$%\^&@\*;:{}=\-_`~()]/g, '') // supprime la ponctuation
-			.replace(/[à@äâ]/g, 'a') // remplace les accents par lettre simple
+			.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, '') // supprime la ponctuation
+			.replace(/[@àäâ]/g, 'a') // remplace les accents par lettre simple
 			.replace(/[éëêè]/g, 'e')
 			.replace(/[ïî]/g, 'i')
 			.replace(/[öô]/g, 'o')
