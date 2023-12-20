@@ -27,5 +27,5 @@
 
 
 export function Bonus1() {
-    console.log('maxi pouet');
+    // console.log('maxi pouet');
 };

@@ -2,7 +2,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Exercices</title>
+	<title>Test Technique Leviatan</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,13 +11,18 @@
 	<!-- Exo1 -->
 	<div class="exo">
 		<h2>Exercice 1 :</h2>
+		<h3 class="enonce">Description :</h3>
 		<p class="enonce">Dans le langage de votre choix, écrire un programme, pour les nombres entre 1 et 101 inclus :</p>
 		<ul class="enonce">
-			<li> si le nombre est divisible par 3** : on écrit Levia</li>
+			<li>si le nombre est divisible par 3** : on écrit Levia</li>
 			<li>si le nombre est divisible par 5** : on écrit Tan</li>
 			<li>si le nombre est divisible par 3 et par 5** : on écrit LeviaTan</li>
 			<li>sinon** : on écrit le nombre</li>
 		</ul>
+		<h3 class="enonce">Contraintes :</h3>
+			<ul  class="enonce">
+				<li>Les librairies sont interdites.</li>
+			</ul>
 		<p class="reponse" id="reponse1"></p>
 	</div>
 
@@ -25,7 +30,13 @@
 	<!-- Exo2 -->
 	<div class="exo">
 		<h2>Exercice 2 :</h2>
+		<h3 class="enonce">Description :</h3>
 		<p class="enonce">Dans le langage de votre choix, écrire un programme qui prend en entrée une liste de nombres entiers positifs et qui renvoie la somme des nombres pairs de cette liste.</p>
+		<h3 class="enonce">Contraintes :</h3>
+		<ul class="enonce">
+			<li>Les librairies sont interdites.</li>
+			<li>Ne pas utiliser de bibliothèques externes ou de fonctions pré-définies pour calculer la somme des nombres pairs.</li>
+		</ul>
 		<p class="enonce" id="enonce2"></p>
 		<p class="reponse" id="reponse2"></p>
 	</div>
@@ -34,7 +45,13 @@
 	<!-- Exo3 -->
 	<div class="exo">
 		<h2>Exercice 3 :</h2>
+		<h3 class="enonce">Description :</h3>
 		<p class="enonce">Dans le langage de votre choix, écrire un programme qui prend en entrée une chaîne de caractères et retourne cette chaîne inversée.</p>
+		<h3 class="enonce">Contraintes :</h3>
+		<ul class="enonce">
+			<li>Les librairies sont interdites.</li>
+			<li>Ne pas utiliser de méthodes ou fonctions intégrées pour inverser la chaîne.</li>
+		</ul>
 		<input type="text" name="userInput" id="exo3" placeholder="Tapez votre texte ici">
 		<p class="reponse" id="reponse3"></p>
 	</div>
@@ -43,7 +60,15 @@
 	<!-- Exo4 -->
 	<div class="exo">
 		<h2>Exercice 4 :</h2>
-		<p class="enonce"> Dans le langage de votre choix, écrire un programme qui prend en entrée une liste de nombres entiers positifs et qui renvoie la somme des nombres pairs de cette liste.</p>
+		<h3 class="enonce"></h3>
+		<p class="enonce">Dans le langage de votre choix, écrire une fonction qui prend en entrée une chaîne de caractères et retourne True si la chaîne est un palindrome, et False sinon. </p>
+		<p class="enonce note">Note : Un palindrome est un mot, une phrase ou une autre séquence de caractères qui se lit de la même manière à l'endroit et à l'envers, en ignorant la casse, la ponctuation, les accents et les espaces (par exemple : radar ou Ève rêve).</p>
+		<h3 class="enonce">Contraintes :</h3>
+		<ul class="enonce">
+			<li>Les librairies sont interdites.</li>
+			<li>Ne pas utiliser de méthodes ou fonctions intégrées pour déterminer si la chaîne est un palindrome.</li>
+			<li>Ignorer la casse, la ponctuation, les accents et les espaces</li>
+		</ul>
 		<input type="text" name="userInput" id="exo4" placeholder="Tapez votre texte ici">
 		<p class="reponse" id="reponse4"></p>
 	</div>
@@ -52,6 +77,7 @@
 	<!-- Exo B1 -->
 	<div class="exo">
 		<h2>Exercice Bonus 1 :</h2>
+		<h3 class="enonce">Description :</h3>
 		<p class="enonce">Créer une API REST simple pour gérer une collection d'articles. Les articles doivent avoir un id, un titre, un contenu et une date de création.</p>
 
 		<h3 class="enonce">Contraintes :</h3>
@@ -88,8 +114,15 @@
 	<!-- Exo B2 -->
 	<div class="exo">
 		<h2>Exercice Bonus 2 :</h2>
-		<p class="enonce"> Dans le langage de votre choix, écrire un programme qui prend en entrée une liste de nombres entiers positifs et qui renvoie la somme des nombres pairs de cette liste.</p>
+		<h3 class="enonce">Description :</h3>
+		<p class="enonce">Écrire une fonction qui prend en entrée une liste d'entiers et un nombre entier K. La fonction doit retourner True si deux nombres distincts de la liste peuvent être additionnés pour obtenir K, et False sinon.</p>
+		<h3 class="enonce">Contraintes :</h3>
+		<ul class="enonce">
+			<li>Les librairies sont interdites.</li>
+		</ul>
 		<p class="enonce" id="enonceB2"></p>
+		<label for="userInput">Choisissez un chiffre entre 2 et 9 ici :</label>
+		<input type="number" name="userInput" id="exoB2">
 		<p class="reponse" id="reponseB2"></p>
 	</div>
 
